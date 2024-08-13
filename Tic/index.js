@@ -58,7 +58,7 @@ app.post('/game/:gameId/move', (req, res) => {
     const winner = checkWinner(game.board);
 
     if (winner) {
-        game.status = winner === 'Draw' ? 'draw' : `won by ${winner}`;
+        game.status = winner === 'Draw' ? 'Draw' : `Won by ${winner}`;
     } else {
         game.turn = game.turn === 'X' ? 'O' : 'X';
     }

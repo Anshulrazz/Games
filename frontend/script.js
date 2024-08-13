@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleCellClick(event) {
         const position = event.target.dataset.position;
 
-        fetch(`http://localhost:3000/game/${gameId}/move`, {
+        fetch(`https://ticserver2.onrender.com/game/${gameId}/move`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startNewGame() {
-        fetch(`http://localhost:3000/game/start`, {
+        fetch(`https://ticserver2.onrender.com/game/start`, {
             method: 'POST'
         })
         .then(response => response.json())

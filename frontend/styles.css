@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    font-family: "Yatra One", system-ui;
+}
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    color:aliceblue;
+    background-image: url('https://wallpapercave.com/wp/wp2757874.gif');
+    background-size: cover;
 }
 
 #game {
@@ -23,20 +28,37 @@ body {
 .cell {
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.169);
     border: 2px solid black;
     font-size: 2rem;
     display: flex;
     align-items: center;
+    border-radius: 6px;
     justify-content: center;
     cursor: pointer;
 }
 
 .cell:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e046;
 }
 
 #status {
     font-size: 1.5rem;
     margin-top: 10px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    
 }
